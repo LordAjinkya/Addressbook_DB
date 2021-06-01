@@ -4,3 +4,8 @@ Query OK, 1 row affected (0.26 sec)
 
 mysql> use Address_Book_Service;
 Database changed
+
+//UC2
+mysql> create table Address_Book_Service(First_Name varchar(30),Last_Name varchar(40),Address varchar(50),City varchar(10),
+    -> State varchar(15),Zip double,Phone_Number double,Email varchar(40));
+Query OK, 0 rows affected (2.10 sec)
