@@ -43,3 +43,17 @@ mysql> select * from Address_Book_Service;
 | Yuga       | Narale    | Parbhani   | Aurangabad | Maharashtra | 9876543 |   8766543234 | Yuga122@gmail.com    |
 +------------+-----------+------------+------------+-------------+---------+--------------+----------------------+
 4 rows in set (0.03 sec)
+
+//UC5
+mysql> delete from Address_Book_Service where First_Name='Yuga';
+Query OK, 1 row affected (0.15 sec)
+
+mysql> select * from Address_Book_Service;
++------------+-----------+------------+----------+-------------+--------+--------------+----------------------+
+| First_Name | Last_Name | Address    | City     | State       | Zip    | Phone_Number | Email                |
++------------+-----------+------------+----------+-------------+--------+--------------+----------------------+
+| Ajinkya    | Narale    | Gangakhed  | Parbhani | Maharashtra | 431514 |   8788594431 | Ajinkya123@gmail.com |
+| Amey       | Narale    | Aurangabad | Mumbai   | Maharashtra | 431001 |   8805925703 | Amey03@yahoo.com     |
+| Shrirang   | Narale    | B          | Jalgaon  | Maharashtra | 431548 |   8766556789 | Shri321@hotmail.com  |
++------------+-----------+------------+----------+-------------+--------+--------------+----------------------+
+3 rows in set (0.03 sec)
