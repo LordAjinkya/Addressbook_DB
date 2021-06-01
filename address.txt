@@ -57,3 +57,12 @@ mysql> select * from Address_Book_Service;
 | Shrirang   | Narale    | B          | Jalgaon  | Maharashtra | 431548 |   8766556789 | Shri321@hotmail.com  |
 +------------+-----------+------------+----------+-------------+--------+--------------+----------------------+
 3 rows in set (0.03 sec)
+
+//UC6
+mysql> select First_Name from Address_Book_Service where city='Mumbai' and State='Maharashtra';
++------------+
+| First_Name |
++------------+
+| Amey       |
++------------+
+1 row in set (0.00 sec)
