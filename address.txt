@@ -75,3 +75,12 @@ mysql> select count(City),count(State) from Address_Book_Service;
 |           3 |            3 |
 +-------------+--------------+
 1 row in set (0.13 sec)
+
+//UC8
+mysql> select * from addressbook where city = 'Mumbai' order by First_Name asc;
++------------+-----------+------------+--------+-------------+--------+--------------+------------------+
+| First_Name | Last_Name | Address    | City   | State       | Zip    | Phone_Number | Email            |
++------------+-----------+------------+--------+-------------+--------+--------------+------------------+
+| Amey       | Narale    | Aurangabad | Mumbai | Maharashtra | 431001 |   8805925703 | Amey03@yahoo.com |
++------------+-----------+------------+--------+-------------+--------+--------------+------------------+
+1 row in set (0.05 sec)
