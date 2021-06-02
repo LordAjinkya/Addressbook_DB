@@ -101,3 +101,12 @@ ERROR 1054 (42S22): Unknown column 'lastname' in 'where clause'
 mysql>  update addressbook set type = 'Self' where Last_Name = 'Aj';
 Query OK, 0 rows affected (0.02 sec)
 Rows matched: 0  Changed: 0  Warnings: 0
+
+//UC10 get number of contact person
+mysql> select count(type) from addressbook;
++-------------+
+| count(type) |
++-------------+
+|           0 |
++-------------+
+1 row in set (0.16 sec)
