@@ -84,3 +84,20 @@ mysql> select * from addressbook where city = 'Mumbai' order by First_Name asc;
 | Amey       | Narale    | Aurangabad | Mumbai | Maharashtra | 431001 |   8805925703 | Amey03@yahoo.com |
 +------------+-----------+------------+--------+-------------+--------+--------------+------------------+
 1 row in set (0.05 sec)
+
+//UC9 identify each addressbook by name and type
+mysql> alter table addressbook add name varchar(15);
+Query OK, 0 rows affected (4.61 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table addressbook add name varchar(15);
+ERROR 1060 (42S21): Duplicate column name 'name'
+mysql> alter table addressbook add type varchar(15);
+Query OK, 0 rows affected (1.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql>  update addressbook set type = 'Self' where lastname = 'Aj';
+ERROR 1054 (42S22): Unknown column 'lastname' in 'where clause'
+mysql>  update addressbook set type = 'Self' where Last_Name = 'Aj';
+Query OK, 0 rows affected (0.02 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
